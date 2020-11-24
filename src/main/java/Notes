@@ -1,0 +1,25 @@
+- Is a behavioral design pattern
+- An object is used to represent and encapsulate all the information needed to call a method at a later time
+  This info includes:
+    - method name
+    - the object that owns the method
+    - values for the method parameters
+
+    What does it do?
+    - Allows you to store lists of code that is executed at a later time or multiple times
+    - Client says I want a specific Command to run when "execute()" is called on one of the
+    encapsulated (hidden) objects
+    -An object called the "Invoker" transfers the Command to another
+    Object called the "Receiver" to execute the specific code
+
+    TurnTvOn Object(Command) -> DeviceButton(Invoker) -> Television.TurnTvOn() (Receiver);
+
+    Benefits:
+    - Allows you to set aside a list of commands for later use
+    - You can store multiple commands in a class to use over and over again
+    - You can implement undo procedures for past commands
+
+//Similar to Strategy pattern, is the "what" vs the "how"
+//2nd most used after Singleton
+
+
